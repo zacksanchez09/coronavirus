@@ -1,56 +1,9 @@
-
-# while True:
-#     os.system("cls")
-#     print("Arbol ABB")
-#     opc = input("\n1.-Insertar nodo \n2.-Inorden \n3.-Preorden \n4.-Postorden \n5.-Buscar \n6.-Salir \n\nElige una opcion -> ")
-
-#     if opc == '1':
-#         nodo = input("\nIngresa el nodo -> ")
-#         # if nodo.isdigit():
-#         nodo = str(nodo)
-#         tree.root = tree.insert(tree.root, nodo)
-#         # else:
-#             # print("\nIngresa solo digitos...")
-#     elif opc == '2':
-#         if tree.root == None:
-#             print("Vacio")
-#         else:
-#             tree.inorder(tree.root)
-#     elif opc == '3':
-#         if tree.root == None:
-#             print("Vacio")
-#         else:
-#             tree.preorder(tree.root)
-#     elif opc == '4':
-#         if tree.root == None:
-#             print("Vacio")
-#         else:
-#             tree.postorder(tree.root)
-#     elif opc == '5':
-#         nodo = input("\nIngresa el nodo a buscar -> ")
-#         # if nodo.isdigit():
-#         nodo = str(nodo)
-#         if tree.search(nodo, tree.root) == None:
-#             print("\nNodo no encontrado...")
-#         else:
-#             print("\nNodo encontrado -> ",tree.search(nodo, tree.root), " si existe...")
-#         # else:
-#             # print("\nIngresa solo digitos...")
-#     elif opc == '6':
-#         print("\nElegiste salir...\n")
-#         os.system("pause")
-#         break
-#     else:
-#         print("\nElige una opcion correcta...")
-#     print()
-#     os.system("pause")
-
-# print()
-
-# file = open("/ruta/filename.txt", "w")
-# file.write("Primera línea" + os.linesep)
-# file.write("Segunda línea")
-# file.close()
+"""
+Expedientes Médicos COVID19 - Árbol Binario de Búsqueda (ABB)
+Seminario de Solución de Problemas de Algoritmia
+Created By: Isaac Eduardo Sánchez Campos
+Código: 211172172
+"""
 
 import tkinter as tk
 import sys
@@ -195,7 +148,7 @@ class Application:
         user_file.write(new_covid)
         user_file.write(new_backgroud)
 
-        # Insertar el nombre del paciente que es el nombre del archivo del expediente
+        # Inserta el nombre del paciente que es el nombre del archivo del expediente
         tree.root = tree.insert(tree.root, name)
 
         mb.showinfo("Alerta", "Paciente registrado con exito.")
